@@ -1,0 +1,171 @@
+#basketballsec{
+    width: 100%;
+    height: 430vh;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: centre;
+}
+
+#leftshoesec, #rightshoesec,#leftshoesec2,#rightshoesec2{
+    background-color: silver;
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    top: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#rightshoesec,#rightshoesec2{
+    background-color: black;
+    height: 80vh;
+}
+#leftshoesec{
+    top: 100vh;
+}
+
+#leftshoesec2{
+    
+    top: 260vh;
+}
+#rightshoesec2{
+    top: 340vh;
+}
+    
+
+
+
+
+.shoeimg{
+    width: 40%;
+    transform: rotateY(180deg)rotate(-45deg);
+     filter: drop-shadow(5px 5px 5px black);
+    animation:movetheshoeleft 2s infinite linear ;
+    transition: all 0.5s;
+}
+.shoeimg:hover{
+    transform: rotateY(180deg)rotate(-45deg) scale(1.2);
+    animation: none;
+
+}
+@keyframes movetheshoeleft {
+    0%,100%{
+        transform: translate(0px,0px) rotateY(180deg) rotate(-15deg);
+
+    }
+    25%,75%{
+        transform: translate(50px,50px) rotateY(180deg) rotate(-45deg);
+
+
+    }
+}
+@keyframes movetheshoeright {
+    0%,100%{
+        transform: translate(0px,0px) rotateY(0deg) rotate(-15deg);
+
+    }
+    25%,75%{
+        transform: translate(50px,50px) rotateY(0deg) rotate(-45deg) ;
+
+    }
+}
+
+#spec{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.shoename{
+    font-size: 5vw;
+    letter-spacing: 10px;
+    text-shadow: 1px 2px 5px black;
+    color: orange;
+}
+.shoepara{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+.shoeprice{
+    color: lawngreen;
+    text-shadow: 2px 2px 5px black;
+    font-size: 30px;
+}
+.button{
+    width: 300px;
+    height: 30px;
+    font-size: 30PX;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 5px;
+    border-radius: 5px;
+    border: none;
+
+    box-shadow: 5px 5px 5px black;
+    background-color: orange;
+    cursor: pointer;
+}
+@keyframes giggle {
+    0%{
+        transform:skewX(0deg) rotatex(0deg);
+    }
+    20%{
+       transform: rotatez(20deg);
+    }
+    40%{
+        transform: rotatez(-20deg);
+
+    }
+    60%{
+        transform: rotatez(20deg);
+
+    }
+    80%{
+        transform: skewX(45deg);
+    }
+    100%{
+        transform:skewX(0deg);
+    }  
+}
+
+.button:hover{
+    animation: giggle 0.2s;
+}
+#rightshoesec{
+    top: 180vh;
+}
+img{
+    z-index: 3;
+}
+#rightshoe1{
+    transform: rotate(0deg) rotate(-45deg);
+    animation: movetheshoeright 2s infinite linear;
+    position: relative;
+    right: 200px;
+    bottom: 20px;
+    transition: all 0.5s;
+}
+#rightshoe1:hover{
+    transform: rotate(0deg) rotate(-45deg) scale(1.2);
+    animation: none;
+
+}
+
+#rightpara{
+    color: white;
+}
+footer{
+    top: 420vh;
+}

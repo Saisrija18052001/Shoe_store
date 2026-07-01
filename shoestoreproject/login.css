@@ -1,0 +1,86 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: black;
+}
+#glowcoloreffect{
+    width: 400px;
+    height: 350px;
+    margin-top: 10%;
+    margin-left: 37%;
+    background-image: linear-gradient(90deg,red,purple,plum,darkblue,plum,purple,red);
+    background-size: 600%;
+    background-position: 600%;
+    filter: blur(90px);
+    animation-name: colorchange;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes colorchange {
+    from{
+        background-position: 700%;
+    }
+    to{
+        background-position: 0%;
+    }
+}
+#login{
+    width: 500px;
+    height: 500px;
+    background-color: rgba(173, 173, 173, 0.514);
+    position: absolute;
+    top: 18%;
+    left:34%;
+    border-radius: 80px;
+    box-shadow: 5px,5px,5px black;
+}
+h1{
+    position: relative;
+    text-align: center;
+    top: 40px;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 5px black;
+}
+.a,#button{
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    position: relative;
+    top: 20%;
+    left: 10%;
+    padding-left: 15px;
+    box-shadow: 5px 5px 5px black;
+    /* background-color: black; */
+}
+#button{
+    width: 50%;
+    top: 25%;
+    height: 40px;
+    left: 20%;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+#message{
+    font-size: 25px;
+    position: relative;
+    top: 100px;
+    color: red;
+    left: 80px;
+}
+#createAccount{
+    font-size: 20px;
+    position: relative;
+    top: 150px;
+    left: 110px;
+}

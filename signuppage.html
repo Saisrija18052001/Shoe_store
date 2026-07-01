@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./signup.css">
+    <script src="./signup.js" defer></script>
+</head>
+<body>
+    <div id="login">
+        <h4>Already have an account</h4>
+        <a href="./login.html"><input type="button" value="Login" id="loginButton"></a>
+    </div>
+    <form>
+    <div id="signup">
+    <div id="container">
+       
+        <div id="subcontainer1">
+            <input class="namesInput" type="text" placeholder="First Name" required>
+            <input class="namesInput" type="text" placeholder="Last Name" required>
+        </div>
+        <div id="subcontainer2">
+            <input class="infoInput" type="email"  placeholder="Enter the Email" required>
+            <input class="infoInput" type="tel" placeholder="Enter the Phone number" required>
+            <input class="infoInput" type="password" placeholder="Enter the password" required>
+        </div>
+        <h1 id="dob">DOB</h1>
+        <div id="subcontainer3">
+            <select id="day">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+            </select>
+            <select id="month">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select>
+            <select id="year">
+                <option>1997</option>
+                <option>1998</option>
+                <option>1999</option>
+                <option>2000</option>
+                <option>2001</option>
+                <option>2002</option>
+            </select>
+        </div>
+            <h4 id="gen">gender</h4> 
+            <div id="subcontainer5">
+                <label>Male</label>
+                <input type="radio" name="gen"oninput="gender('male')">
+                <label>Female</label>
+                <input type="radio" name="gen"oninput="gender('female')">
+                <label>Others</label>
+                <input type="radio" name="gen" oninput="gender('others')">
+            </div>
+            <div id="subcontainer4">
+                <input id="signupButton" type="submit" value="signup" onclick="storeData()">
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
